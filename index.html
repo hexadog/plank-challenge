@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plank Challenge - Relevez le défi du gainage en 30 jours</title>
+    <meta
+      name="description"
+      content="Transformez votre corps avec notre challenge de gainage en 30 jours. Progressez à votre rythme avec 4 niveaux de difficulté."
+    />
+    <meta
+      name="keywords"
+      content="plank challenge, gainage, fitness, challenge 30 jours, application fitness"
+    />
+    <meta
+      property="og:title"
+      content="Plank Challenge - 30 jours pour transformer votre corps"
+    />
+    <meta
+      property="og:description"
+      content="Relevez le défi du gainage en 30 jours avec 4 niveaux de difficulté adaptés à tous."
+    />
+    <meta property="og:image" content="./src/images/og-image.jpg" />
+    <link rel="icon" href="./src/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/css/tailwind.css" />
+  </head>
+  <body
+    class="bg-gradient-to-br from-primary-500 to-primary-500/70 text-white font-sans"
+  >
+    <!-- Navigation -->
+    <nav class="bg-primary-500 sticky top-0 z-50">
+      <div class="container-custom py-4 flex items-center justify-between">
+        <a href="#" class="flex items-center">
+          <span class="text-2xl font-bold text-white">Plank Challenge</span>
+        </a>
+        <div class="hidden md:flex items-center space-x-6">
+          <a
+            href="#levels"
+            class="text-white hover:text-white/90 transition-colors"
+            >Niveaux</a
+          >
+          <a
+            href="#download"
+            class="btn bg-primary-500/20 text-white border border-white/30 hover:bg-primary-500/30"
+            >Télécharger</a
+          >
+        </div>
+        <button class="md:hidden text-gray-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative overflow-hidden">
+      <div class="container-custom py-20 md:py-20">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 md:pr-8">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+              Challenge de Gainage en 30 Jours
+            </h1>
+            <p class="text-xl mb-8">
+              Renforcez vos abdominaux, améliorez votre posture et sculptez
+              votre corps en seulement 30 jours
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.hexadog.plank_challenge"
+                class="flex items-center justify-center"
+              >
+                <img
+                  src="./src/images/badge-playstore.png"
+                  alt="Google Play"
+                  class="h-12"
+                />
+              </a>
+              <a
+                href="#features"
+                class="btn bg-primary-500/20 text-white border border-white/30 hover:bg-primary-500/30"
+              >
+                En savoir plus
+              </a>
+            </div>
+          </div>
+          <div class="md:w-1/2 mt-10 md:mt-0">
+            <img
+              src="./src/images/mockup.png"
+              alt="Plank Challenge App"
+              class="w-full max-w-md mx-auto drop-shadow-2xl"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- App Screenshots -->
+    <section class="py-20">
+      <div class="container-custom">
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Une expérience utilisateur soignée
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <img
+            src="./src/images/screenshots/screen1.png"
+            alt="Écran d'accueil"
+            class="rounded-xl shadow-md w-full"
+          />
+          <img
+            src="./src/images/screenshots/screen2.png"
+            alt="Timer de gainage"
+            class="rounded-xl shadow-md w-full"
+          />
+          <img
+            src="./src/images/screenshots/screen3.png"
+            alt="Statistiques"
+            class="rounded-xl shadow-md w-full"
+          />
+          <img
+            src="./src/images/screenshots/screen4.png"
+            alt="Badges"
+            class="rounded-xl shadow-md w-full"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Levels Section -->
+    <section id="levels" class="section py-20">
+      <div class="container-custom">
+        <h2 class="text-3xl font-bold text-center mb-4">
+          Niveaux adaptés à tous
+        </h2>
+        <p class="text-center text-white/80 mb-12 max-w-3xl mx-auto">
+          Choisissez parmi 4 niveaux de difficulté, de débutant à expert, et
+          progressez à votre rythme.
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"
+          >
+            <div class="bg-primary-500 h-2"></div>
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <span class="text-3xl mr-2">🌱</span>
+                <h3 class="text-xl font-semibold">Rookie</h3>
+              </div>
+              <p class="text-gray-600 mb-4">Premier pas vers le succès</p>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li class="flex items-center">
+                  <svg
+                    class="h-4 w-4 text-primary mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  Progression de 20s à 120s
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="h-4 w-4 text-primary mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  Idéal pour les débutants
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="h-4 w-4 text-primary mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  Version gratuite
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="level-card rounded-xl shadow-md overflow-hidden border border-gray-100"
+          >
+            <div class="bg-secondary h-2"></div>
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <span class="text-3xl mr-2">🚀</span>
+                <h3 class="text-xl font-semibold">Challenger</h3>
+              </div>
+              <p class="text-gray-600 mb-4">En route vers la progression</p>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li class="flex items-center">
+                  <svg
+                    class="h-4 w-4 text-secondary mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  Progression de 60s à 180s
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="h-4 w-4 text-secondary mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  Pour amateurs réguliers
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="h-4 w-4 text-secondary mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  Version premium
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="level-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"
+          >
+            <div class="bg-warrior h-2"></div>
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <span class="text-3xl mr-2">💪</span>
+                <h3 class="text-xl font-semibold">Warrior</h3>
+              </div>
+              <p class="text-gray-600 mb-4">Prêt pour le défi</p>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li class="flex items-center">
+                  <svg
+                    class="h-4 w-4 text-warrior mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  Progression de 90s à 300s
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="h-4 w-4 text-warrior mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  Pour sportifs confirmés
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="h-4 w-4 text-warrior mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  Version premium
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="level-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"
+          >
+            <div class="bg-legend h-2"></div>
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <span class="text-3xl mr-2">🔥</span>
+                <h3 class="text-xl font-semibold">Legend</h3>
+              </div>
+              <p class="text-gray-600 mb-4">Pour les champions</p>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li class="flex items-center">
+                  <svg
+                    class="h-4 w-4 text-legend mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  Progression de 180s à 420s
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="h-4 w-4 text-legend mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  Pour athlètes experts
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="h-4 w-4 text-legend mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  Version premium
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Premium Features -->
+    <section class="section py-20">
+      <div class="container-custom">
+        <h2 class="text-3xl font-bold text-center mb-4">
+          Fonctionnalités Premium
+        </h2>
+        <p class="text-center text-white/80 mb-12 max-w-3xl mx-auto">
+          Un achat unique, sans abonnement, pour accéder à toutes les
+          fonctionnalités.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <div class="bg-primary-500/75 p-6 rounded-xl mb-8">
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-primary-400 mt-0.5 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span>Accès aux niveaux Challenger, Warrior et Legend</span>
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-primary-400 mt-0.5 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span>Personnalisation des sessions de gainage</span>
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-primary-400 mt-0.5 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span>Badges exclusifs à débloquer</span>
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-primary-400 mt-0.5 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span>Mode personnalisé illimité</span>
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-primary-400 mt-0.5 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span>Défis spéciaux (matinal, week-end...)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./src/images/premium.png"
+              alt="Fonctionnalités premium"
+              class="h-96"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download CTA -->
+    <section id="download" class="py-20 text-white">
+      <div class="container mx-auto px-6 text-center max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8">
+          Prêt à relever le défi ?
+        </h2>
+        <p class="text-xl mb-10 max-w-2xl mx-auto">
+          Commencez votre transformation dès aujourd'hui avec notre challenge de
+          30 jours.
+        </p>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.hexadog.plank_challenge"
+          class="inline-flex items-center"
+        >
+          <img
+            src="./src/images/badge-playstore.png"
+            alt="Google Play"
+            class="h-12 shadow-lg"
+          />
+        </a>
+        <p class="text-white/80 mt-6">
+          Version gratuite disponible avec le niveau Rookie
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white py-12">
+      <div
+        class="container mx-auto px-6 text-center items-center justify-center"
+      >
+
+        <div class="space-y-3">
+        <a href="politique-confidentialite.html" class="hover:text-white transition-colors"
+          >Politique de confidentialité</a
+        >
+        <p class="text-xs">Aperçu créés avec <a href="https://previewed.app/template/F434268E" class="hover:text-white transition-colors"
+          >Previewed</a
+        >
+        </p>
+    </div>
+
+        <div
+          class="pt-8 text-center text-white/80 text-sm"
+        >
+          <p>&copy; 2025 Plank Challenge. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/js/main.js" type="module"></script>
+  </body>
+</html>
