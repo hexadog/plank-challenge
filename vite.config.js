@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
+    base: './', // Préfixe toutes les URLs des assets avec ./
     build: {
         outDir: 'dist',
         rollupOptions: {
